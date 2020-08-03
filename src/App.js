@@ -1,26 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {UsernameInputForm} from "./UsernameInputForm";
+import {CommentTable} from "./CommentTable";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.commentTable = React.createRef();
+        this.submitUsername = this.submitUsername.bind(this);
+    }
+
+    submitUsername(username) {
+
+        let comments = [];
+
+        fetch('http://localhost:8000/top-comments/' + username)
+            .then(response => response.json())
+            .then(data => {
+                comments = data.comments;
+                this.commentTable.current.setState({comments: comments});
+            })
+            .catch(error => console.log(error));
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <UsernameInputForm onSubmit={this.submitUsername}/>
+                <CommentTable ref={this.commentTable}/>
+            </div>
+        );
+    }
 }
 
 export default App;
