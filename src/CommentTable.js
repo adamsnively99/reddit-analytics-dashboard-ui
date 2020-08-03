@@ -1,5 +1,5 @@
 import React from "react";
-import {XYPlot, MarkSeries, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, ChartLabel, Hint} from "react-vis";
+import {XYPlot, MarkSeries, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, Hint} from "react-vis";
 import 'react-vis/dist/style.css';
 import './CommentTable.css';
 

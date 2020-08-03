@@ -10,16 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fb12bd-706c-4d96-a5cc-42c4dfca2b86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CommentTable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CommentTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UsernameInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UsernameInputForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="e1fb12bd-706c-4d96-a5cc-42c4dfca2b86" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +65,7 @@
       <workItem from="1594863386226" duration="5444000" />
       <workItem from="1595727289064" duration="10051000" />
       <workItem from="1596470540589" duration="1096000" />
-      <workItem from="1596472135865" duration="5744000" />
+      <workItem from="1596472135865" duration="6170000" />
     </task>
     <servers />
   </component>
