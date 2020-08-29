@@ -14,7 +14,7 @@ class App extends React.Component {
 
         let comments = [];
 
-        fetch('http://localhost:8000/top-comments/' + username)
+        fetch('http://reddit-analytics-dashboard-dev.us-east-2.elasticbeanstalk.com/top-comments/' + username)
             .then(response => response.json())
             .then(data => {
                 comments = data.comments;
